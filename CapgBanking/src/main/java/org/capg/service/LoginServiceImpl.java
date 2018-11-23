@@ -29,11 +29,14 @@ public class LoginServiceImpl implements ILoginService{
 	@Override
 	public boolean createCustomer(Customer customer) {
 		
+		System.out.println( loginDao.createCustomer(customer));
+		
 		return loginDao.createCustomer(customer);
 	}
 
 	@Override
 	public Account createAccount(Account account) {
+		System.out.println( loginDao.createAccount(account));
 		
 		return loginDao.createAccount(account);
 	}
