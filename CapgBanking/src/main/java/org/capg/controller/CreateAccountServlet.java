@@ -35,12 +35,7 @@ public class CreateAccountServlet extends HttpServlet {
 		String description=request.getParameter("description");
 		
 		
-		System.out.println("accountType");
-		System.out.println("balance");
-		System.out.println("description");
-		System.out.println("accountType");
-		System.out.println("balance");
-		System.out.println("description");
+		System.out.println("updating child branch");
 		
 		Account account=new Account();
 		account.setAccountType(AccountType.valueOf(accountType));
