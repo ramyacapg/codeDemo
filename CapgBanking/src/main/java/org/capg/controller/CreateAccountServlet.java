@@ -38,7 +38,9 @@ public class CreateAccountServlet extends HttpServlet {
 		System.out.println("accountType");
 		System.out.println("balance");
 		System.out.println("description");
-		
+		System.out.println("accountType");
+		System.out.println("balance");
+		System.out.println("description");
 		
 		Account account=new Account();
 		account.setAccountType(AccountType.valueOf(accountType));
