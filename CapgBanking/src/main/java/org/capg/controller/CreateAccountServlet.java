@@ -28,6 +28,9 @@ public class CreateAccountServlet extends HttpServlet {
 		
 		ILoginService loginService=new LoginServiceImpl();
 		
+		System.out.println("-");
+		System.out.println("-");
+		
 		String accountType=request.getParameter("accountType");
 		String balance=request.getParameter("balance");
 		String description=request.getParameter("description");
