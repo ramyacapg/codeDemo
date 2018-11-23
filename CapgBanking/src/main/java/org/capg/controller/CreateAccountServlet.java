@@ -36,6 +36,7 @@ public class CreateAccountServlet extends HttpServlet {
 		
 		
 		System.out.println("updating child branch");
+		System.out.println("updating master branch");
 		
 		Account account=new Account();
 		account.setAccountType(AccountType.valueOf(accountType));
