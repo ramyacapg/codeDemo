@@ -1,0 +1,52 @@
+insert into Customer2(firstName,lastName,dob, email,mobileNo,passwrd) values('tom','jerry','2001-10-12','tom@gmail.com','324324324','tom123');
+
+insert into Customer2(firstName,lastName,dob, email,mobileNo,passwrd) values('jack','thomson','1991-10-12','jack@gmail.com','890912890','jack190');
+
+
+
+insert into customer(firstName,lastName,dateOfBirth, emailId,mobile,customerPwd) 
+values(?,?,?,?,?,?);
+
+
+insert into address(addressline1,addressline2,city,state,pincode,customerId) values(?,?,?,?,?,?)
+
+create table Customer2(
+customerId int primary key auto_increment,
+firstName varchar(25),
+lastName varchar(25),
+dateOfBirth date,
+email varchar(50),
+mobileNo varchar(25),
+passwrd varchar(25)
+
+);
+
+create table address(
+addressId int primary key auto_increment,
+addressLine1 varchar(25),
+addressLine2 varchar(25),
+city varchar(25),
+state varchar(25),
+pincode varchar(10),
+customerID int references Customer2(customer_Id)
+);
+
+create table account(
+accountNumber int primary key auto_increment,
+customerId int references Customer2(customer_Id),
+accountType varchar(10),
+openingDate date,
+openingBalance int check(openingBalance>=0),
+description varchar(100)
+);
+
+create table transaction(
+transactionId int primary key auto_increment,
+transactionDate date,
+fromAccountNumber int references account(accountNumber),
+toAccountNumber int references account(accountNumber),
+amount int check(amount>=0),
+transactionType varchar(20),
+description varchar(100),
+customer_id int references Customer2(customer_Id)
+);

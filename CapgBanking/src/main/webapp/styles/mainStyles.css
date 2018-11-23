@@ -1,0 +1,56 @@
+.greet{
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 700px;
+	color:red;
+}
+
+#footer{
+	
+	background-color: black;
+	color:white;
+	font-size:12px;
+	font-weight: bold;
+	font-style: italic;
+	padding-top: 10px;
+		padding-bottom: 10px;
+}
+
+#mainCnt{
+	
+	width: 800px;
+	margin: 10px 50px 10px 150px;
+	padding: 5px 5px 5px 5px;
+	border: 2px solid;
+}
+#ctrCnt{
+	width: 800px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: red;
+}
+
+li a:active {
+    background-color: red;
+}

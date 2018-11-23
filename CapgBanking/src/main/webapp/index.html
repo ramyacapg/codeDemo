@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CapgBanking</title>
+
+<link type="text/css" rel="stylesheet" href="styles/mystyles.css">
+<script type="text/javascript" src="script/validation.js"></script>
+</head>
+<body >
+<form onsubmit="return validate()" name="f1"   method="post" action="loginServlet">
+<h1 align="center">CapgBanking</h1>
+<hr>
+<div id="centercnt">
+<div id="cnt">
+
+	<img alt="Shopping" src="images/banking.jpg" >
+</div>
+
+
+<div id="loginForm">
+
+	<table>
+		<tr>
+			<th colspan="2">Login Form</th>
+			
+		</tr>
+		<tr>
+			<td>UserName:</td>
+			<td><input type="text" name="userName" size="20" required></td>
+			<td>
+				<div id="userErrMsg" class="errMsg"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="password" name="userPwd" size="20" required></td>
+			<td>
+				<div id="pwdErrMsg" class="errMsg"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<!-- <input type="submit" value="SignUp" name="login" class="btnStyle">  -->
+			<div  class="btnStyle">
+			<a href="view/registration.html" style="color:white; font-family: Arial; font-weight: bold; font-size: 13px; padding-left: 15px;" >Sign Up</a>
+			</div>
+			</td>
+			<td>
+				<input type="submit" value="SignIn" name="login" class="btnStyle"> 
+			</td>
+		</tr>
+	</table>
+
+</div>
+
+</div>
+<hr>
+</form>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CapgBanking</title>
+
+<link type="text/css" rel="stylesheet" href="../styles/register.css">
+</head>
+<body>
+<form method="post" action="../register" >
+<div id="register">
+<h2 align="center">Customer Registration Form</h2>
+<hr>
+	<div class="tablecnt">
+		<table >
+			<tr>
+				<th colspan="3">Customer Form</th>
+			</tr>
+			<tr>
+				<td>FirstName:</td>
+				<td>
+					<input type="text" name="firstName" size="20" required>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>LastName:</td>
+				<td>
+					<input type="text" name="lastName" size="20" required>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>DateOfBirth:</td>
+				<td>
+					<input type="date" name="dateOfbirth" required>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>AddressLine1:</td>
+				<td>
+					<textarea rows="3" cols="25" name="addressline1" required></textarea>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>AddressLine2:</td>
+				<td>
+					<textarea rows="3" cols="25" name="addressline2"></textarea>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Choose City:</td>
+				<td>
+					<select name="city">
+						<option value="Chennai">Chennai</option>
+						<option value="Hyderabad">Hyderabad</option>
+						<option value="Pune">Pune</option>
+						<option value="Delhi">Delhi</option>
+						<option value="Mumbai">Mumbai</option>
+						
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Choose State:</td>
+				<td>
+					<input type="radio" name="state" value="TamilNadu"> TamilNadu
+					<input type="radio" name="state" value="Andra"> Andra 
+					<input type="radio" name="state" value="UP"> UP 
+					<input type="radio" name="state" value="Maharashtra"> Maharashtra 
+					 
+					
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Pincode:</td>
+				<td>
+					<input type="text" name="pincode" size="20" required>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>EmailId:</td>
+				<td>
+					<input type="email" name="email" size="20" required>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>MobileNumber:</td>
+				<td>
+					<input type="text" name="mobile" size="20" required>
+				</td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td>
+					<input type="password" name="custPwd" size="20" required>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Confirm Password:</td>
+				<td>
+					<input type="password" name="confimrCustPwd" size="20" required>
+				</td>
+			</tr>
+			
+			
+			<tr>
+			
+				<td></td>
+				<td>
+				
+					<input type="submit" name="register" value="Register" class="btnStyle">
+				</td>
+			</tr>
+			
+		</table>
+	
+	</div>
+</div>
+</form>
+
+</body>
+</html>

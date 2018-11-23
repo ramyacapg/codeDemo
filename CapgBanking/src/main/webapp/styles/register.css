@@ -1,0 +1,42 @@
+form{
+		margin: 0;
+		
+}
+a{
+	
+	text-decoration: none;
+border: none;
+}
+
+a:link{
+
+	text-decoration: none;
+	border: none;
+
+}
+
+#register{
+	margin: 50px 100px 100px 50px;
+	border-radius: 25px;
+	border: 2px solid blue;
+	
+	
+}
+
+.tablecnt{
+	margin-left: 200px;
+}
+h2,th{
+	color:blue;
+}
+hr{
+	border-color: blue;
+}
+.btnStyle{
+	margin-top:10px;
+	padding:5px 5px 5px 5px;
+	width:100px;
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+}
