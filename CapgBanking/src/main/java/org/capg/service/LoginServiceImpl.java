@@ -43,7 +43,7 @@ public class LoginServiceImpl implements ILoginService{
 
 	@Override
 	public List<Account> getaccountdetails(String string) {
-		// TODO Auto-generated method stub
+		System.out.println( loginDao.getaccountdetails(string));
 		return loginDao.getaccountdetails(string);
 	}
 
